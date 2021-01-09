@@ -39,3 +39,7 @@ exports.run = (client, message, args, prefix) =>{
     
     }
 };
+module.exports.config = {
+    nombre: 'desencriptar',
+    descripcion: 'Desencripta un texto encriptado en Base64'
+}

@@ -31,3 +31,7 @@ try{ console.log(serverinfo, message.guild.id, {mutedRole})
     }
     console.log('mute')
 }
+module.exports.config = {
+    nombre: 'mute',
+    descripcion: 'Fuera de servicio'
+}

@@ -45,3 +45,7 @@ exports.run = (client, message, args, prefix) =>{
         message.delete();
     }
 }
+module.exports.config = {
+    nombre: 'encriptar',
+    descripcion: 'Encripta un texto plano a Base64 EJ: Eduardo'
+}

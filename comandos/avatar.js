@@ -8,7 +8,7 @@ exports.run = (client, message, args, prefix) =>{
     const embed = new Discord.MessageEmbed()
         .setTitle(`Este es el avatar de ${message.mentions.users.first().username}`)
         .setImage(message.mentions.users.first().avatarURL())
-        .setColor(120, 0, 150)
+        .setColor('RANDOM')
      
     message.channel.send(embed)
     console.log('avatar')
@@ -16,8 +16,12 @@ exports.run = (client, message, args, prefix) =>{
        const embed = new Discord.MessageEmbed()
           .setTitle(`Este es tu avatar`)
           .setImage(message.author.avatarURL())
-          .setColor(120, 0, 150)
+          .setColor('RANDOM')
           message.channel.send(embed)
           console.log('avatar')
    }
+}
+module.exports.config = {
+    nombre: 'avatar',
+    descripcion: 'Muestra tu avatar o el avatar de quien menciones'
 }

@@ -20,3 +20,7 @@ exports.run = async (client, message, args, prefix) => {
        message.channel.send('El muted role de este server es '+ split[1])
   }
 }
+module.exports.config = {
+  nombre: 'setmuterole',
+  descripcion: 'Fuera de servicio'
+}
