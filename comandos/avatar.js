@@ -6,7 +6,7 @@ const config = require('../config.json')
 exports.run = (client, message, args, prefix) =>{
    if(message.content.includes('@')){  
     const embed = new Discord.MessageEmbed()
-        .setTitle(`Este es el avatar de ${message.mentions.users.first().username}`)
+        .setTitle(`Avatar de ${message.mentions.users.first().username}`)
         .setImage(message.mentions.users.first().avatarURL())
         .setColor('RANDOM')
      

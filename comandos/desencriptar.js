@@ -32,7 +32,7 @@ exports.run = (client, message, args, prefix) =>{
     }else{
         const embed = new Discord.MessageEmbed()
            .setTitle('El texto es: '+decodeBase64(split[1]))
-           .setImage('https://media1.tenor.com/images/9132a203c7031bd534eaccdc2f8d92de/tenor.gif?itemid=17694217')
+           .setImage('https://i.pinimg.com/originals/08/27/7c/08277cd34f6f6d48cabc17a77b0c048e.gif')
            .setColor(0, 0, 255)
         message.channel.send(embed);
         

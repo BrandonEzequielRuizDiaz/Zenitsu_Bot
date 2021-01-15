@@ -31,21 +31,17 @@ function encodeBase64(textoPlano) {
 }
 
 exports.run = (client, message, args, prefix) =>{
-    let split = message.content.split(' ')
-    if (split.length > 2){
-        message.channel.send('El texto debe ser plano, EJ: Eduardo');
-    }else if(split.length <= 1){
-        message.channel.send('Debes poner un texto, EJ: ts;encriptar Eduardo');
-    }else{
+    let split = message.content.split(prefix+'encriptar ')
+    
         const embed = new Discord.MessageEmbed()
         .setTitle('El texto es: '+encodeBase64(split[1]))
-        .setImage('https://media1.tenor.com/images/0272552629fe0cf1c8c701de6a364f2f/tenor.gif?itemid=12746884')
+        .setImage('https://media.tenor.com/images/a3b3e5d38ac8bbc0480829f776cd6593/tenor.gif')
         .setColor(230, 0, 255)
      message.channel.send(embed);
         message.delete();
-    }
+    
 }
 module.exports.config = {
     nombre: 'encriptar',
-    descripcion: 'Encripta un texto plano a Base64 EJ: Eduardo'
+    descripcion: 'Encripta un texto a Base64 EJ: Tsuke B es mi creador'
 }

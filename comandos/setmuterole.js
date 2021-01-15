@@ -22,5 +22,5 @@ exports.run = async (client, message, args, prefix) => {
 }
 module.exports.config = {
   nombre: 'setmuterole',
-  descripcion: 'Fuera de servicio'
+  descripcion: 'Habilita el comando mute EJ: ts;setmuterole [ID DEL ROLE MUTEADO]'
 }
